@@ -1,0 +1,34 @@
+#!/bin/sh
+
+rm -f senha.jks
+rm -f twain_applet.jar
+rm -f sane_applet.jar
+
+mkdir twain_applet
+cp -f bin/*.class twain_applet/
+cd twain_applet/
+jar cfm ../twain_applet.jar ../MANIFEST_TWAIN.MF .
+cd ..
+rm -rf twain_applet/
+
+mkdir sane_applet
+cp -f bin/*.class sane_applet/
+cd sane_applet/
+jar cfm ../sane_applet.jar ../MANIFEST_SANE.MF .
+cd ..
+rm -rf sane_applet/
+
+keytool -genkey -alias applet -keyalg RSA -keypass 12345678 -storepass 12345678 -keystore senha.jks -validity 3650
+
+jarsigner -keystore senha.jks twain_applet.jar applet
+jarsigner -keystore senha.jks sane_applet.jar applet
+jarsigner -keystore senha.jks lib/twain.jar applet
+jarsigner -keystore senha.jks lib/sane.jar applet
+
+# Deploy!!!
+
+#cp -f twain_applet.jar sane_applet.jar lib/*.jar bibliotecas_linux/*.zip bibliotecas_windows/*.zip ../../qwerty/agata/public/
+#chmod -R 777 ../../qwerty/agata/public/
+
+#cp -f twain_applet.jar sane_applet.jar lib/*.jar bibliotecas_linux/*.zip bibliotecas_windows/*.zip ../agata/agata/public/
+#chmod -R 777 ../agata/agata/public/
