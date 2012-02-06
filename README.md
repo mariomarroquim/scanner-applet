@@ -1,10 +1,11 @@
-scanner_applet
-==============
+README
+======
 
-## DESCRIPTION
+Description
+-----------
 
 A applet to scan images and upload multiple images/files. Made for an ECM
-project of my company, www.deadsimple.com.br.
+project of my company, http://www.deadsimple.com.br.
 
 It provides:
 
@@ -13,10 +14,13 @@ It provides:
 * Multiple image/file upload is also avaliable
 * Easy to use API. Can be used in ANY webapp with minimum effort :)
 
-## USAGE
+Usage
+-----
 
 Soon...
 
-## SUPPORT
-You can contact me at mariomarroquim@gmail.com
+Support
+-------
+
+You can contact me at mariomarroquim@gmail.com.
 
