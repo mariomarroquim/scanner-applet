@@ -27,7 +27,8 @@ Just include the following code in your page. But first understand this:
 * Replace the word "Sane" for "Twain" if the client is running Windows!
 * Look into the code for more documentation :)
 
-    <!-- applet code="SaneGedScanner.class" archive="sane_applet.jar, sane.jar" codebase="/" width="659" height="35">
+    <pre><code>
+    <applet code="SaneGedScanner.class" archive="sane_applet.jar, sane.jar" codebase="/" width="659" height="35">
       <param name="url_upload_pagina" value="http://XXX.com/document/upload"/>
       <param name="id_documento" value="34351"/>
       <param name="id_usuario" value="635"/>
@@ -35,7 +36,7 @@ Just include the following code in your page. But first understand this:
 
       <strong>
         Apparently you do not have
-        <a href="http://www.java.com/pt_BR/download/" target="_blank">Java (version 6)</a>
+        <a href="http://www.java.com/" target="_blank">Java (version 6)</a>
         installed.
       </strong>
 
@@ -45,7 +46,8 @@ Just include the following code in your page. But first understand this:
           <input id="upload" name="upload" type="file"/>
           <input name="commit" type="submit" value="Enviar"/>
       </form>
-    </applet -->
+    </applet>
+    </code></pre>
 
 TODO
 ----
