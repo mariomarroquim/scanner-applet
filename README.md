@@ -24,9 +24,9 @@ Just include the following code in your page. But first understand this:
 * The `url_upload_pagina` is the URL your webapp has to provide to receive the files asynchronously
 * `id_documento` is the id for the document or something else that "owns" the files
 * `id_usuario` is the id for the user so you can authenticate it on the `url_upload_pagina`. I think you should pass a user hash or something
-* Replace the word Sane for Twain if the client is running Windows!
+* Replace the word "Sane" for "Twain" if the client is running Windows!
 
-  <applet code="SaneGedScanner.class" archive="sane_applet.jar, sane.jar" codebase="/" width="659" height="35">
+  `<applet code="SaneGedScanner.class" archive="sane_applet.jar, sane.jar" codebase="/" width="659" height="35">
     <param name="url_upload_pagina" value="http://XXX.com/document/upload"/>
     <param name="id_documento" value="34351"/>
     <param name="id_usuario" value="635"/>
@@ -38,11 +38,13 @@ Just include the following code in your page. But first understand this:
       installed.
     </strong>
 
-    <form accept-charset="UTF-8" action="http://XXX.com/document/upload?id_documento=34351&amp;id_usuario=635" enctype="multipart/form-data" method="post">
-      <input id="upload" name="upload" type="file" />
-      <input name="commit" type="submit" value="Enviar" />
+    <form accept-charset="UTF-8" action="http://XXX.com/document/upload?id_documento=34351&amp;id_usuario=635" 
+      enctype="multipart/form-data" 
+      method="post">
+        <input id="upload" name="upload" type="file"/>
+        <input name="commit" type="submit" value="Enviar"/>
     </form>
-  </applet>
+  </applet>`
 
 TODO
 ----
