@@ -19,15 +19,13 @@ It provides:
 Usage
 -----
 
-Just include the following code in your page. But first understand this:
+Just include [this code](http://www.pastie.org/3334867) in your page. But first understand this:
 
 * The `url_upload_pagina` is the URL your webapp has to provide to receive the files asynchronously
 * `id_documento` is the id for the document or something else that "owns" the files
 * `id_usuario` is the id for the user so you can authenticate it on the `url_upload_pagina`. I think you should pass a user hash or something
 * Replace the word "Sane" for "Twain" if the client is running Windows!
 * Look into the code for more documentation :)
-
-<script src="https://gist.github.com/1760074.js"> </script>
 
 TODO
 ----
