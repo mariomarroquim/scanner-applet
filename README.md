@@ -28,25 +28,25 @@ Just include the following code in your page. But first understand this:
 * Look into the code for more documentation :)
 
 <pre><code>
-  <applet code="SaneGedScanner.class" archive="sane_applet.jar, sane.jar" codebase="/" width="659" height="35">
-    <param name="url_upload_pagina" value="http://XXX.com/document/upload"/>
-    <param name="id_documento" value="34351"/>
-    <param name="id_usuario" value="635"/>
-    <param name="alinhamento" value="centralizado"/>
+<applet code="SaneGedScanner.class" archive="sane_applet.jar, sane.jar" codebase="/" width="659" height="35">
+  <param name="url_upload_pagina" value="http://XXX.com/document/upload"/>
+  <param name="id_documento" value="34351"/>
+  <param name="id_usuario" value="635"/>
+  <param name="alinhamento" value="centralizado"/>
 
-    <strong>
-      Apparently you do not have
-      <a href="http://www.java.com/pt_BR/download/" target="_blank">Java (version 6)</a>
-      installed.
-    </strong>
+  <strong>
+    Apparently you do not have
+    <a href="http://www.java.com/pt_BR/download/" target="_blank">Java (version 6)</a>
+    installed.
+  </strong>
 
-    <form accept-charset="UTF-8" action="http://XXX.com/document/upload?id_documento=34351&amp;id_usuario=635" 
-      enctype="multipart/form-data" 
-      method="post">
-        <input id="upload" name="upload" type="file"/>
-        <input name="commit" type="submit" value="Enviar"/>
-    </form>
-  </applet>
+  <form accept-charset="UTF-8" action="http://XXX.com/document/upload?id_documento=34351&amp;id_usuario=635" 
+    enctype="multipart/form-data" 
+    method="post">
+      <input id="upload" name="upload" type="file"/>
+      <input name="commit" type="submit" value="Enviar"/>
+  </form>
+</applet>
 </pre></code>  
 
 TODO
