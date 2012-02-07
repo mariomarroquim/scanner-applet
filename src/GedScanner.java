@@ -72,8 +72,9 @@ public abstract class GedScanner extends Componente implements ScannerListener {
 				});
 
 				List<String> opcoes = new ArrayList<String>();
+				String [] listaScanners = scanner.getDeviceNames();
 
-				for(String nomeScanner : scanner.getDeviceNames()){
+				for(String nomeScanner : listaScanners){
 					boolean podeListar = true;
 					for(String prefixoInterface : PREFIXOS_INTERFACES){
 						if(nomeScanner.toLowerCase().contains(prefixoInterface.toLowerCase())){
@@ -82,9 +83,9 @@ public abstract class GedScanner extends Componente implements ScannerListener {
 						}
 					}
 
-					if(podeListar){
+					if(podeListar || listaScanners.length < 2){
 						opcoes.add(nomeScanner);
-					}
+					}					
 				}
 				
 				scanners = new JComboBox(opcoes.toArray());
