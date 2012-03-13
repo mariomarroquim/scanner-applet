@@ -88,8 +88,8 @@ public abstract class GedScanner extends Componente implements ScannerListener {
 					}					
 				}
 				
-				if(opcoes.size() < 1 && nomesScanners.length > 0){
-					for(String nomeScanner : nomesScanners){
+				if(opcoes.size() < 1 && listaScanners.length > 0){
+					for(String nomeScanner : listaScanners){
 						opcoes.add(nomeScanner);
 					}
 				}
