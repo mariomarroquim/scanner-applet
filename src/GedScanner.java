@@ -71,9 +71,11 @@ public abstract class GedScanner extends Componente implements ScannerListener {
 					}
 				});
 
+				String [] nomesScanners = scanner.getDeviceNames();
+				
 				List<String> opcoes = new ArrayList<String>();
 
-				for(String nomeScanner : scanner.getDeviceNames()){
+				for(String nomeScanner : nomesScanners){
 					boolean podeListar = true;
 					for(String prefixoInterface : PREFIXOS_INTERFACES){
 						if(nomeScanner.toLowerCase().contains(prefixoInterface.toLowerCase())){
@@ -87,8 +89,17 @@ public abstract class GedScanner extends Componente implements ScannerListener {
 					}
 				}
 				
+				if(opcoes.size() < 1 && nomesScanners.length > 0){
+					for(String nomeScanner : nomesScanners){
+						opcoes.add(nomeScanner);
+					}
+				}
+				
 				scanners = new JComboBox(opcoes.toArray());
-				scanners.setSelectedIndex(0);
+				
+				if(opcoes.size() > 0){
+					scanners.setSelectedIndex(0);
+				}
 				
 				scannersDisponiveis = true;
 			}
