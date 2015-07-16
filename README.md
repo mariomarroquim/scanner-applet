@@ -6,7 +6,7 @@ Please, read this doc before getting started :)
 Description
 -----------
 
-A applet to scan images and upload multiple images/files. Made for an ECM project..
+A applet to scan images and upload multiple images/files. Made for an ECM project.
 
 It provides:
 
