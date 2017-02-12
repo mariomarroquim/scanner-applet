@@ -1,12 +1,7 @@
-README
-======
+Scanner Applet
+==============
 
-Please, read this doc before getting started :)
-
-Description
------------
-
-A applet to scan images and upload multiple images/files. Made for an ECM project.
+Java applet to scan images and upload multiple images/files. Made for an ECM project.
 
 It provides:
 
@@ -26,13 +21,7 @@ Just include [this code](http://www.pastie.org/3334867) in your page. But first 
 * Replace the word "Sane" for "Twain" if the client is running Windows!
 * Look into the code for more documentation :)
 
-TODO
-----
-
-* Test those multifunctional scanners!
-
 Support
 -------
 
 You can contact me at mariomarroquim@gmail.com.
-
