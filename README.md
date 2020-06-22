@@ -13,7 +13,7 @@ It provides:
 Usage
 -----
 
-Just include [this code](http://www.pastie.org/3334867) in your page. But first understand this:
+Just include [this code](https://gist.github.com/mariomarroquim/1760074) in your page. But first understand this:
 
 * The `url_upload_pagina` is the URL your webapp has to provide to receive the files asynchronously. Each file will be received in the `upload` param.
 * `id_documento` is the id for the document or something else that "owns" the files.
